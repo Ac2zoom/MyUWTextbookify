@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script type="text/javascript">
+            var response;
+            var settings = {
+                "async": true,
+                "crossDomain": true,
+                "url": "https://hackingedu.chegg.com/hacking-edu/search?q=biology",
+                "method": "GET",
+                "headers": {
+                    "accept": "application/json",
+                    "authorization": "Basic QUtSWTlkTTZIUXNpYW9ldFZrSjNzRU9XQXNuWG45eHA6b2ZldDZpbXh0M0Zl UW1wRw==",
+                    "cache-control": "no-cache",
+                    "postman-token": "14c65656-a2ab-bf3a-33ac-70847eef03a6"
+                },
+            }
+            
+            $.ajax(settings).done(function (response) {
+              console.log(response);
+            });
+        </script>
+    </head>
+</html>
